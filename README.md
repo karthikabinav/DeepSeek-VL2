@@ -405,3 +405,5 @@ If you have any questions, please raise an issue or contact us at [service@deeps
 
 
 Related project: [Qwen2.5-VL](https://github.com/QwenLM/Qwen2.5-VL)
+
+Related project: [Qwen2.5-VL](https://github.com/QwenLM/Qwen2.5-VL)
