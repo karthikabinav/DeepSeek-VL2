@@ -165,7 +165,7 @@ And the output is something like:
 <|User|>: <image>
 <|ref|>The giraffe at the back.<|/ref|>.
 
-<|Assistant|>: <|ref|>The giraffe at the back.<|/ref|><|det|>[[580, 270, 999, 900]]<|/det|><｜end▁of▁sentence｜>
+<|Assistant|>: <|ref|>The giraffe at the back.<|/ref|><|det|>[[580, 270, 999, 900]]<|/det|><\uff5cend\u2581of\u2581sentence\uff5c>
 ```
 
 ### Simple Inference Example with Multiple Images
