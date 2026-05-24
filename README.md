@@ -121,8 +121,6 @@ vl_gpt: DeepseekVLV2ForCausalLM = AutoModelForCausalLM.from_pretrained(model_pat
 vl_gpt = vl_gpt.to(torch.bfloat16).cuda().eval()
 
 ## single image conversation example
-## Please note that <|ref|> and <|/ref|> are designed specifically for the object localization feature. These special tokens are not required for normal conversations.
-## If you would like to experience the grounded captioning functionality (responses that include both object localization and reasoning), you need to add the special token <|grounding|> at the beginning of the prompt. Examples could be found in Figure 9 of our paper.
 conversation = [
     {
         "role": "<|User|>",
@@ -157,15 +155,7 @@ outputs = vl_gpt.language.generate(
 )
 
 answer = tokenizer.decode(outputs[0].cpu().tolist(), skip_special_tokens=False)
-print(f"{prepare_inputs[sft_format][0]}", answer)
-```
-
-And the output is something like:
-```
-<|User|>: <image>
-<|ref|>The giraffe at the back.<|/ref|>.
-
-<|Assistant|>: <|ref|>The giraffe at the back.<|/ref|><|det|>[[580, 270, 999, 900]]<|/det|><\uff5cend\u2581of\u2581sentence\uff5c>
+print(f"{prepare_inputs['sft_format'][0]}", answer)
 ```
 
 ### Simple Inference Example with Multiple Images
