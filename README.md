@@ -47,13 +47,13 @@
 
 
 <p align="center">
-  <a href="https://github.com/deepseek-ai/DeepSeek-VL2/tree/main?tab=readme-ov-file#3-model-download"><b>📥 Model Download</b></a> |
-  <a href="https://github.com/deepseek-ai/DeepSeek-VL2/tree/main?tab=readme-ov-file#4-quick-start"><b>⚡ Quick Start</b></a> |
-  <a href="https://github.com/deepseek-ai/DeepSeek-VL2/tree/main?tab=readme-ov-file#5-license"><b>📜 License</b></a> |
-  <a href="https://github.com/deepseek-ai/DeepSeek-VL2/tree/main?tab=readme-ov-file#6-citation"><b>📖 Citation</b></a> <br>
-  <a href="./DeepSeek_VL2_paper.pdf"><b>📄 Paper Link</b></a> |
-  <a href="https://arxiv.org/abs/2412.10302"><b>📄 Arxiv Paper Link</b></a> |
-  <a href="https://huggingface.co/spaces/deepseek-ai/deepseek-vl2-small"><b>👁️ Demo</b></a>
+  <a href="https://github.com/deepseek-ai/DeepSeek-VL2/tree/main?tab=readme-ov-file#3-model-download"><b>\ud83d\udce5 Model Download</b></a> |
+  <a href="https://github.com/deepseek-ai/DeepSeek-VL2/tree/main?tab=readme-ov-file#4-quick-start"><b>\u26a1 Quick Start</b></a> |
+  <a href="https://github.com/deepseek-ai/DeepSeek-VL2/tree/main?tab=readme-ov-file#5-license"><b>\ud83d\udcdc License</b></a> |
+  <a href="https://github.com/deepseek-ai/DeepSeek-VL2/tree/main?tab=readme-ov-file#6-citation"><b>\ud83d\udcd6 Citation</b></a> <br>
+  <a href="./DeepSeek_VL2_paper.pdf"><b>\ud83d\udcc4 Paper Link</b></a> |
+  <a href="https://arxiv.org/abs/2412.10302"><b>\ud83d\udcc4 Arxiv Paper Link</b></a> |
+  <a href="https://huggingface.co/spaces/deepseek-ai/deepseek-vl2-small"><b>\ud83d\udc41\ufe0f Demo</b></a>
 </p>
 
 ## 1. Introduction
@@ -69,11 +69,11 @@ Zhiyu Wu*, Xiaokang Chen*, Zizheng Pan*, Xingchao Liu*, Wen Liu**, Damai Dai, Hu
 ![](./images/vl2_teaser.jpeg)
 
 ## 2. Release
-✅ <b>2025-2-6</b>: Naive Implemented Gradio Demo on Huggingface Space [deepseek-vl2-small](https://huggingface.co/spaces/deepseek-ai/deepseek-vl2-small).
+\u2705 <b>2025-2-6</b>: Naive Implemented Gradio Demo on Huggingface Space [deepseek-vl2-small](https://huggingface.co/spaces/deepseek-ai/deepseek-vl2-small).
 
-✅ <b>2024-12-25</b>: Gradio Demo Example, Incremental Prefilling and VLMEvalKit Support.
+\u2705 <b>2024-12-25</b>: Gradio Demo Example, Incremental Prefilling and VLMEvalKit Support.
 
-✅ <b>2024-12-13</b>: DeepSeek-VL2 family released, including <code>DeepSeek-VL2-tiny</code>, <code>DeepSeek-VL2-small</code>, <code>DeepSeek-VL2</code>.
+\u2705 <b>2024-12-13</b>: DeepSeek-VL2 family released, including <code>DeepSeek-VL2-tiny</code>, <code>DeepSeek-VL2-small</code>, <code>DeepSeek-VL2</code>.
 
 ## 3. Model Download
 
@@ -85,9 +85,9 @@ Please note that the use of this model is subject to the terms outlined in [Lice
 
 | Model        | Sequence Length | Download                                                                    |
 |--------------|-----------------|-----------------------------------------------------------------------------|
-| DeepSeek-VL2-tiny | 4096            | [🤗 Hugging Face](https://huggingface.co/deepseek-ai/deepseek-vl2-tiny) |
-| DeepSeek-VL2-small | 4096            | [🤗 Hugging Face](https://huggingface.co/deepseek-ai/deepseek-vl2-small) |
-| DeepSeek-VL2 | 4096            | [🤗 Hugging Face](https://huggingface.co/deepseek-ai/deepseek-vl2)   |
+| DeepSeek-VL2-tiny | 4096            | [\ud83e\udd17 Hugging Face](https://huggingface.co/deepseek-ai/deepseek-vl2-tiny) |
+| DeepSeek-VL2-small | 4096            | [\ud83e\udd17 Hugging Face](https://huggingface.co/deepseek-ai/deepseek-vl2-small) |
+| DeepSeek-VL2 | 4096            | [\ud83e\udd17 Hugging Face](https://huggingface.co/deepseek-ai/deepseek-vl2)   |
 
 
 ## 4. Quick Start
@@ -165,7 +165,7 @@ And the output is something like:
 <|User|>: <image>
 <|ref|>The giraffe at the back.<|/ref|>.
 
-<|Assistant|>: <|ref|>The giraffe at the back.<|/ref|><|det|>[[580, 270, 999, 900]]<|/det|><｜end▁of▁sentence｜>
+<|Assistant|>: <|ref|>The giraffe at the back.<|/ref|><|det|>[[580, 270, 999, 900]]<|/det|><\uff5cend\u2581of\u2581sentence\uff5c>
 ```
 
 ### Simple Inference Example with Multiple Images
@@ -239,7 +239,7 @@ This is image_2: <image>
 This is image_3: <image>
  Can you tell me what are in the images?
 
-<|Assistant|>: The images show three different types of vegetables. Image_1 features carrots, which are orange with green tops. Image_2 displays corn cobs, which are yellow with green husks. Image_3 contains raw pork ribs, which are pinkish-red with some marbling.<｜end▁of▁sentence｜>
+<|Assistant|>: The images show three different types of vegetables. Image_1 features carrots, which are orange with green tops. Image_2 displays corn cobs, which are yellow with green husks. Image_3 contains raw pork ribs, which are pinkish-red with some marbling.<\uff5cend\u2581of\u2581sentence\uff5c>
 ```
 
 ### Simple Inference Example with Incremental Prefilling
@@ -332,7 +332,7 @@ This is image_2: <image>
 This is image_3: <image>
  Can you tell me what are in the images?
 
-<|Assistant|>: The first image contains carrots. The second image contains corn. The third image contains meat.<｜end▁of▁sentence｜>
+<|Assistant|>: The first image contains carrots. The second image contains corn. The third image contains meat.<\uff5cend\u2581of\u2581sentence\uff5c>
 ```
 
 Parse the bounding box coordinates, please refer to [parse_ref_bbox](https://github.com/deepseek-ai/DeepSeek-VL2/blob/main/deepseek_vl2/serve/app_modules/utils.py#L270-L298).
@@ -406,3 +406,5 @@ If you have any questions, please raise an issue or contact us at [service@deeps
 Related project: [Qwen2.5-VL](https://github.com/QwenLM/Qwen2.5-VL)
 
 Related project: [Qwen2.5-VL](https://github.com/deepseek-ai/DeepSeek-VL2)
+
+Related project: [Qwen2.5-VL](https://github.com/QwenLM/Qwen2.5-VL)
