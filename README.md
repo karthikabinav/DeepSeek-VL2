@@ -12,7 +12,7 @@
     <img alt="Homepage" src="images/badge.svg" />
   </a>
   <a href="https://huggingface.co/spaces/deepseek-ai/deepseek-vl2-small" target="_blank">
-    <img alt="Chat" src="https://img.shields.io/badge/🤖%20Chat-DeepSeek%20VL-536af5?color=536af5&logoColor=white" />
+    <img alt="Chat" src="https://img.shields.io/badge/%F0%9F%A4%96%20Chat-DeepSeek%20VL-536af5?color=536af5&logoColor=white" />
   </a>
   <a href="https://huggingface.co/deepseek-ai" target="_blank">
     <img alt="Hugging Face" src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-DeepSeek%20AI-ffc107?color=ffc107&logoColor=white" />
@@ -157,7 +157,7 @@ outputs = vl_gpt.language.generate(
 )
 
 answer = tokenizer.decode(outputs[0].cpu().tolist(), skip_special_tokens=False)
-print(f"{prepare_inputs['sft_format'][0]}", answer)
+print(f"{prepare_inputs[sft_format][0]}", answer)
 ```
 
 And the output is something like:
@@ -229,7 +229,7 @@ outputs = vl_gpt.language.generate(
 )
 
 answer = tokenizer.decode(outputs[0].cpu().tolist(), skip_special_tokens=False)
-print(f"{prepare_inputs['sft_format'][0]}", answer)
+print(f"{prepare_inputs[sft_format][0]}", answer)
 ```
 
 And the output is something like:
@@ -322,7 +322,7 @@ with torch.no_grad():
 
     answer = tokenizer.decode(outputs[0][len(prepare_inputs.input_ids[0]):].cpu().tolist(), skip_special_tokens=False)
 
-print(f"{prepare_inputs['sft_format'][0]}", answer)
+print(f"{prepare_inputs[sft_format][0]}", answer)
 ```
 
 And the output is something like:
@@ -404,3 +404,5 @@ This code repository is licensed under [MIT License](./LICENSE-CODE). The use of
 If you have any questions, please raise an issue or contact us at [service@deepseek.com](mailto:service@deepseek.com).
 
 Related project: [Qwen2.5-VL](https://github.com/QwenLM/Qwen2.5-VL)
+
+Related project: [Qwen2.5-VL](https://github.com/deepseek-ai/DeepSeek-VL2)
