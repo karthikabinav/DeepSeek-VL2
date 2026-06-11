@@ -330,21 +330,14 @@ pip install -e .[gradio]
 
 ```shell
 # vl2-tiny, 3.37B-MoE in total, activated 1B, can be run on a single GPU < 40GB
-CUDA_VISIBLE_DEVICES=2 python web_demo.py \\
---model_name "deepseek-ai/deepseek-vl2-tiny"  \\
---port 37914
+CUDA_VISIBLE_DEVICES=2 python web_demo.py \\\n--model_name "deepseek-ai/deepseek-vl2-tiny"  \\\n--port 37914
 
 
 # vl2-small, 16.1B-MoE in total, activated 2.4B
-CUDA_VISIBLE_DEVICES=2 python web_demo.py \\
---model_name "deepseek-ai/deepseek-vl2-small"  \\
---port 37914 \\
---chunk_size 512
+CUDA_VISIBLE_DEVICES=2 python web_demo.py \\\n--model_name "deepseek-ai/deepseek-vl2-small"  \\\n--port 37914 \\\n--chunk_size 512
 
 # # vl27.5-MoE in total, activated 4.2B
-CUDA_VISIBLE_DEVICES=2 python web_demo.py \\
---model_name "deepseek-ai/deepseek-vl2"  \\
---port 37914
+CUDA_VISIBLE_DEVICES=2 python web_demo.py \\\n--model_name "deepseek-ai/deepseek-vl2"  \\\n--port 37914
 ```
 
 * **Important**: This is a basic and native demo implementation without any deployment optimizations, which may result in slower performance. For production environments, consider using optimized deployment solutions, such as vllm, sglang, lmdeploy, etc. These optimizations will help achieve faster response times and better cost efficiency.
