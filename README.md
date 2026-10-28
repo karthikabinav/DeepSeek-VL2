@@ -157,7 +157,7 @@ outputs = vl_gpt.language.generate(
 )
 
 answer = tokenizer.decode(outputs[0].cpu().tolist(), skip_special_tokens=False)
-print(f"{prepare_inputs[sft_format][0]}", answer)
+print(f"{prepare_inputs['sft_format'][0]}", answer)
 ```
 
 And the output is something like:
@@ -229,7 +229,7 @@ outputs = vl_gpt.language.generate(
 )
 
 answer = tokenizer.decode(outputs[0].cpu().tolist(), skip_special_tokens=False)
-print(f"{prepare_inputs[sft_format][0]}", answer)
+print(f"{prepare_inputs['sft_format'][0]}", answer)
 ```
 
 And the output is something like:
@@ -322,7 +322,7 @@ with torch.no_grad():
 
     answer = tokenizer.decode(outputs[0][len(prepare_inputs.input_ids[0]):].cpu().tolist(), skip_special_tokens=False)
 
-print(f"{prepare_inputs[sft_format][0]}", answer)
+print(f"{prepare_inputs['sft_format'][0]}", answer)
 ```
 
 And the output is something like:
