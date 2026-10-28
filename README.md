@@ -157,7 +157,7 @@ outputs = vl_gpt.language.generate(
 )
 
 answer = tokenizer.decode(outputs[0].cpu().tolist(), skip_special_tokens=False)
-print(f"{prepare_inputs['sft_format'][0]}", answer)
+print(f"{prepare_inputs[sft_format][0]}", answer)
 ```
 
 And the output is something like:
@@ -229,7 +229,7 @@ outputs = vl_gpt.language.generate(
 )
 
 answer = tokenizer.decode(outputs[0].cpu().tolist(), skip_special_tokens=False)
-print(f"{prepare_inputs['sft_format'][0]}", answer)
+print(f"{prepare_inputs[sft_format][0]}", answer)
 ```
 
 And the output is something like:
@@ -322,7 +322,7 @@ with torch.no_grad():
 
     answer = tokenizer.decode(outputs[0][len(prepare_inputs.input_ids[0]):].cpu().tolist(), skip_special_tokens=False)
 
-print(f"{prepare_inputs['sft_format'][0]}", answer)
+print(f"{prepare_inputs[sft_format][0]}", answer)
 ```
 
 And the output is something like:
@@ -402,5 +402,3 @@ This code repository is licensed under [MIT License](./LICENSE-CODE). The use of
 ## 7. Contact
 
 If you have any questions, please raise an issue or contact us at [service@deepseek.com](mailto:service@deepseek.com).
-
-Related project: [Qwen2.5-VL](https://github.com/QwenLM/Qwen2.5-VL)
